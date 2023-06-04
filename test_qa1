@@ -1,0 +1,16 @@
+print ("Посчитаем?")
+while True:
+    user_input = input("Введите выражение: ")
+    try:
+        res = eval(user_input)
+        print(res)
+    except ZeroDivisionError as e:
+        print("Нельзя делить на ноль")
+    except SyntaxError:
+        print("Syntax error")
+    except Exception as err:
+        print("Пока еще не умею работать с переменными!")
+    finally:
+        repeat = input("Посчитать еще раз? (yes/no): ")
+        if repeat == ("no"):
+                break
