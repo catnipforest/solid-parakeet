@@ -9,7 +9,7 @@ while True:
     except SyntaxError:
         print("Syntax error")
     except Exception as err:
-        print("Пока еще не умею работать с переменными!")
+        print("Возникла ошибка: ", err)
     finally:
         repeat = input("Посчитать еще раз? (yes/no): ")
         if repeat == ("no"):
